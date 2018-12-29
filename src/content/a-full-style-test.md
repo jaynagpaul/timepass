@@ -5,7 +5,9 @@ image: img/testimg-cover.jpg
 author: Ghost
 date: 2018-09-30T07:03:47.149Z
 tags: 
+  - Styles
   - Tests
+  - Comprehensive
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
@@ -83,10 +85,10 @@ Definition
 ## Table
 
 | Table Header 1 | Table Header 2 | Table Header 3 |
-| :------------: | :------------: | :------------: |
-| Division 1     | Division 2     | Division 3     |
-| Division 1     | Division 2     | Division 3     |
-| Division 1     | Division 2     | Division 3     |
+|:--------------:|:--------------:|:--------------:|
+|   Division 1   |   Division 2   |   Division 3   |
+|   Division 1   |   Division 2   |   Division 3   |
+|   Division 1   |   Division 2   |   Division 3   |
 
 ---
 

@@ -2,15 +2,26 @@ backend:
   name: github
   repo: jaynagpaul/timepass #replace with your username/repo
 
+publish_mode: editorial_workflow
 media_folder: src/content/img
+display_url: https://timepassmoney.com
 
 collections:
-  - name: blog
-    label: Blog
+  - name: posts
+    label: Posts
     folder: src/content
     create: true
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: author, label: Author, widget: string }
+      - name: tags
+        label: Tags
+        widget: list
+        hint: 'Comma Seperated'
+      - { name: image, label: Cover Image, widget: image, allow_multiple: false }
       - { name: body, label: Body, widget: markdown }
+
+  - name: author
+    label: Author
