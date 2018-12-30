@@ -7,21 +7,23 @@ media_folder: src/content/img
 display_url: https://timepassmoney.com
 
 collections:
-  - name: posts
-    label: Posts
+  - name: post
+    label: Post
     folder: src/content
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: author, label: Author, widget: string }
+      - {
+          name: author,
+          label: Author,
+          widget: string,
+          hint: 'Use Gary (edit author.yaml to change the author bio)',
+        }
       - name: tags
         label: Tags
         widget: list
-        hint: 'Comma Seperated'
+        hint: 'Comma Seperated (edit tag.yaml to add custom tag info)'
       - { name: image, label: Cover Image, widget: image, allow_multiple: false }
       - { name: body, label: Body, widget: markdown }
-
-  - name: author
-    label: Author
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
