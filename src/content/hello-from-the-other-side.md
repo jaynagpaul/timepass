@@ -4,7 +4,7 @@ title: Hello from the other side
 author: Gary
 tags:
   - Testtrtrnjtrtrt
-image: /src/content/img/demo1.jpg
+image: img/demo1.jpg
 layout: post
 ---
 How are you
